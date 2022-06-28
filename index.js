@@ -9,9 +9,9 @@ const solde = require("./routes/solde");
 const jour = require("./routes/jour");
 const demande = require("./routes/demande");
 const conge = require("./routes/conge");
-const etablissement = require("./routes/Etablissement");
-const departement = require("./routes/Departement")
-const carriere = require("./routes/Carriere")
+const etablissement = require("./routes/etablissement");
+const departement = require("./routes/deepartement")
+const carriere = require("./routes/cariere")
 dotenv.config();
 //Connect to BD
 mongoose.connect(process.env.DB_CONNECT, { useNewUrlParser: true }, () =>
@@ -20,7 +20,7 @@ mongoose.connect(process.env.DB_CONNECT, { useNewUrlParser: true }, () =>
 //Middleware
 app.use(express.json());
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: ["http://localhost:3000","*","https://testconge.alwaysdata.net"],
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 };

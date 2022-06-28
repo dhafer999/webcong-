@@ -4,8 +4,7 @@ const { updateCarriereValidation, CarriereValidation } = require("./validation")
 const { send } = require("express/lib/response");
 const User = require("../model/User");
 const Solde = require("../model/Solde");
-const carriere = require("../model/carriere");
-const Carriere = require("../model/carriere");
+const Carriere = require("../model/Carriere");
 
 /**
  * @description : " get all carriere "

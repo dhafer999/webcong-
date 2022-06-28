@@ -11,7 +11,7 @@ const demande = require("./routes/demande");
 const conge = require("./routes/conge");
 const etablissement = require("./routes/etablissement");
 const departement = require("./routes/departement")
-const carriere = require("./routes/cariere")
+const carriere = require("./routes/carriere")
 dotenv.config();
 //Connect to BD
 mongoose.connect(process.env.DB_CONNECT, { useNewUrlParser: true }, () =>

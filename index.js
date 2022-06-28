@@ -34,4 +34,4 @@ app.use("/api/conge", conge);
 app.use("/api/etablissement", etablissement);
 app.use("/api/departement", departement);
 app.use("/api/carriere", carriere);
-app.listen(5000, () => console.log("Server up and running in port 5000"));
+app.listen(process.env.PORT, () => console.log(`Server up and running in port : ${process.env.PORT}`));

@@ -10,7 +10,7 @@ const jour = require("./routes/jour");
 const demande = require("./routes/demande");
 const conge = require("./routes/conge");
 const etablissement = require("./routes/etablissement");
-const departement = require("./routes/deepartement")
+const departement = require("./routes/departement")
 const carriere = require("./routes/cariere")
 dotenv.config();
 //Connect to BD
